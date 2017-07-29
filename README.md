@@ -3,26 +3,10 @@ ShadowsocksR
 
 [![Build Status]][Travis CI]
 
-A fast tunnel proxy that helps you bypass firewalls.
+Egg hope wall collapse
 
 Server
 ------
-
-### Install
-
-Debian / Ubuntu:
-
-    apt-get install git
-    git clone https://github.com/shadowsocksr/shadowsocksr.git
-
-CentOS:
-
-    yum install git
-    git clone https://github.com/shadowsocksr/shadowsocksr.git
-
-Windows:
-
-    git clone https://github.com/shadowsocksr/shadowsocksr.git
 
 ### Usage for single user on linux platform
 
@@ -34,6 +18,10 @@ move to "~/shadowsocksr", then run:
 move to "~/shadowsocksr/shadowsocks", then run:
 
     python server.py -p 443 -k password -m aes-128-cfb -O auth_aes128_md5 -o tls1.2_ticket_auth_compatible
+
+    run in background:
+
+    python server.py -p 443 -k password -m aes-128-cfb -O auth_aes128_md5 -o tls1.2_ticket_auth_compatible -d start
 
 Check all the options via `-h`.
 
